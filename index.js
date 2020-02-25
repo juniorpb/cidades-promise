@@ -1,1 +1,1 @@
-module.exports = require('./src/estado-promise');
+module.exports = require('./src/cidades-promise');

@@ -1,5 +1,5 @@
 {
-  "name": "estado-promise",
+  "name": "cidades-promise",
   "version": "1.0.0",
   "description": "Busca por cidades por meio do estados, integrado diretamente com API INEP (Instituto Nacional de Estudos e Pesquisas Educacionais).",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juniorpb/estado-promise.git"
+    "url": "git+https://github.com/juniorpb/cidades-promise.git"
   },
   "author": "Junior Silva",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juniorpb/estado-promise/issues"
+    "url": "https://github.com/juniorpb/cidades-promise/issues"
   },
-  "homepage": "https://github.com/juniorpb/estado-promise#readme",
+  "homepage": "https://github.com/juniorpb/cidades-promise#readme",
   "dependencies": {
     "axios": "^0.19.2"
   }

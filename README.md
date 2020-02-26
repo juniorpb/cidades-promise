@@ -9,7 +9,7 @@
 
  * Interface Assíncrono.
  * Atualizado em tempo-real por se conectar diretamente aos serviços do INEP.
- * Sempre retorna a resposta mais rápida por fazer as consultas de forma concorrente.
+ * Sempre retorna a resposta rápida.
  * Possui alta disponibilidade.
  * Sem limites de uso (rate limits) conhecidos.
  * Suporte ao Node.js 
@@ -93,3 +93,8 @@ cidades("gg").then((res) => {
 ```
 $ npm install --save cidades-promise
 ```
+
+## Autor
+
+| [<img src="https://avatars1.githubusercontent.com/u/34171773?s=460&v=4"><br><sub>@filipedeschamps</sub>](https://github.com/filipedeschamps) |
+| :---: |

@@ -96,5 +96,5 @@ $ npm install --save cidades-promise
 
 ## Autor
 
-| [<img src="https://avatars1.githubusercontent.com/u/34171773?s=460&v=4"><br><sub>@filipedeschamps</sub>](https://github.com/filipedeschamps) |
+| [<img src="https://avatars1.githubusercontent.com/u/34171773?s=460&v=4" width="115><br><sub>@juniorpb</sub>](https://github.com/juniorpb) |
 | :---: |

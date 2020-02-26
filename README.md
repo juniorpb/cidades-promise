@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://image.freepik.com/vetores-gratis/mapa-do-brasil_92265-13.jpg" width="400">
+</p>
+
 <h1 align="center">Cidades Promise</h1>
 
 <p align="center">
@@ -44,8 +48,8 @@ Usando async:
 ``` js
 const cidades = require('cidades-promise');
 
-async function getCidades (){
-    const response = await cidades("pbk")
+async function getCidades(){
+    const response = await cidades("pbk");
     console.log(response);
 
 }

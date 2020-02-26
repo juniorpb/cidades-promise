@@ -8,7 +8,7 @@ async function getCidadesByEstado(siglaEstado) {
         return await axios.get(url);
         
     } catch (error) {
-        return "Erro ao buscar cidades";
+        return JSON.stringify({"erro": "Erro ao buscar cidades"});
     }
 }
 

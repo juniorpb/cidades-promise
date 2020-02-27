@@ -29,7 +29,7 @@ Basta utilziar a sigla do estado como parametro, por exemplo o estado da Paraíb
 ``` js
 const cidades = require('cidades-promise');
 
-cidades("pb").then((res) => {
+cidades.getCidadesByEstado("pb").then((res) => {
     console.log(res);
 })
     
@@ -49,9 +49,8 @@ Usando async:
 const cidades = require('cidades-promise');
 
 async function getCidades(){
-    const response = await cidades("pbk");
+    const response = await cidades.getCidadesByEstado("pb");
     console.log(response);
-
 }
     
 // [
@@ -69,7 +68,7 @@ async function getCidades(){
 ``` js
 const cidades = require('cidades-promise');
 
-cidades("pbkj").then((res) => {
+cidades.getCidadesByEstado("pbkj").then((res) => {
     console.log(res);
 })
     
@@ -77,16 +76,35 @@ cidades("pbkj").then((res) => {
 
 ```
 
-### Quando a Sigla do Estado não é encontrado
+### Quando a Sigla do Estado não é encontrada
 
 ``` js
 const cidades = require('cidades-promise');
 
-cidades("gg").then((res) => {
+cidades.getCidadesByEstado("gg").then((res) => {
     console.log(res);
 })
     
 // {"erro": "Erro ao buscar cidades"}
+
+```
+
+### Busca Cidades por DDD
+
+``` js
+const cidades = require('cidades-promise');
+
+cidades.getCidadesByDddd(83).then((res) => {
+    console.log(res);
+})
+    
+// [
+//   'AGUA BRANCA',
+//   'AGUIAR',
+//   'ALAGOA GRANDE',
+//   'ALAGOA NOVA',
+//    ... more items
+// ]  
 
 ```
 

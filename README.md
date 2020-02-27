@@ -5,13 +5,13 @@
 <h1 align="center">Cidades Promise</h1>
 
 <p align="center">
-  Busca por Cidades utilizando a sigla do Estado, integrado diretamente aos serviços do INEP (Instituto Nacional de Estudos e Pesquisas Educacionais).
+  Busca por cidades utilizando a sigla do Estado ou DDD, integrado diretamente aos serviços do INEP e outras API.
 </p>
 
 
 ## Features
 
- * Interface Assíncrono.
+ * Interface Assíncrona.
  * Atualizado em tempo-real por se conectar diretamente aos serviços do INEP.
  * Sempre retorna a resposta rápida.
  * Possui alta disponibilidade.
@@ -24,7 +24,7 @@
 
 ### Realizando uma consulta
 
-Basta utilziar a sigla do estado como parametro, por exemplo o estado da Paraíba:
+Basta utilizar a sigla do estado como parâmetro, por exemplo o estado da Paraíba:
 
 ``` js
 const cidades = require('cidades-promise');

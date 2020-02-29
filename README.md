@@ -29,7 +29,7 @@ Basta utilizar a sigla do estado como parâmetro, por exemplo o estado da Paraí
 ``` js
 const cidades = require('cidades-promise');
 
-cidades.getCidadesByEstado("pb").then((res) => {
+cidades.getCitiesByState("pb").then((res) => {
     console.log(res);
 })
     
@@ -49,7 +49,7 @@ Usando async:
 const cidades = require('cidades-promise');
 
 async function getCidades(){
-    const response = await cidades.getCidadesByEstado("pb");
+    const response = await cidades.getCitiesByState("pb");
     console.log(response);
 }
     
@@ -68,7 +68,7 @@ async function getCidades(){
 ``` js
 const cidades = require('cidades-promise');
 
-cidades.getCidadesByEstado("pbkj").then((res) => {
+cidades.getCitiesByState("pbkj").then((res) => {
     console.log(res);
 })
     
@@ -81,7 +81,7 @@ cidades.getCidadesByEstado("pbkj").then((res) => {
 ``` js
 const cidades = require('cidades-promise');
 
-cidades.getCidadesByEstado("gg").then((res) => {
+cidades.getCitiesByState("gg").then((res) => {
     console.log(res);
 })
     
@@ -94,7 +94,7 @@ cidades.getCidadesByEstado("gg").then((res) => {
 ``` js
 const cidades = require('cidades-promise');
 
-cidades.getCidadesByDddd(83).then((res) => {
+cidades.getCitiesByDddd(83).then((res) => {
     console.log(res);
 })
     

@@ -17,12 +17,20 @@ async function getCidadesByDdd(ddd){
  * Limpamos os dados deixando apenas os nomes das Cidades
  */
 function trataResposta(data) {
-    const cidades = data.reduce((dadoPuro, linhaCidade) =>{
-        return [...dadoPuro, linhaCidade.cidade]
+    const body = {
+        estado : {},
+        cidades : {}
+    }
 
+    // UF do estado DDD
+    body.estado = data[0].estado;
+
+    // array com todas as cidades DDD
+    body.cidades = data.reduce((dadoPuro, linhaCidade) =>{
+        return [...dadoPuro, linhaCidade.cidade]
     }, [])
 
-    return cidades;
+    return body;
 } 
 
 module.exports = getCidadesByDdd;

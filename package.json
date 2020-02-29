@@ -1,6 +1,6 @@
 {
   "name": "cidades-promise",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "Busca Cidades por meio da sigla do Estado, DDD e/ou outras formas de ordena-las 📍🏠",
   "main": "index.js",
   "scripts": {

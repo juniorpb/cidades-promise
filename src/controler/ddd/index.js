@@ -1,6 +1,6 @@
 const getCidades = require('../../service/ddd');
 
-async function getCidadesByDDD(ddd){
+async function getCidadesByDdd(ddd){
 
     ddd = ddd.toString()
     if (ddd.length !== 2) {
@@ -25,4 +25,4 @@ function trataResposta(data) {
     return cidades;
 } 
 
-module.exports = getCidadesByDDD;
+module.exports = getCidadesByDdd;

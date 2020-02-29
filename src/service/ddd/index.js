@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-async function getCidadesByDDD(ddd) {
+async function getCidadesByDdd(ddd) {
 
     const csvUrl = `http://ddd.pricez.com.br/ddds/${ddd}`
     
@@ -12,4 +12,4 @@ async function getCidadesByDDD(ddd) {
     }
 }
 
-module.exports = getCidadesByDDD;
+module.exports = getCidadesByDdd;

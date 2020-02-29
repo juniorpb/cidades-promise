@@ -94,7 +94,7 @@ cidades.getCitiesByState("gg").then((res) => {
 ``` js
 const cidades = require('cidades-promise');
 
-cidades.getCitiesByDddd(83).then((res) => {
+cidades.getCitiesByDdd(83).then((res) => {
     console.log(res);
 })
     

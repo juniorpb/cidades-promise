@@ -1,4 +1,4 @@
-const getCidades = require('../../service/siglaEstado');
+const getCidades = require('../../service/state');
 
 async function getCidadesEstado(siglaEstado){
 

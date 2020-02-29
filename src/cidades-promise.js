@@ -5,6 +5,6 @@
  */
 
 module.exports = {
-    getCidadesByEstado: require('./controler/siglaEstado'),
-    getCidadesByDddd:   require('./controler/ddd')
+    getCitiesByState: require('./controler/state'),
+    getCitiesByDddd:   require('./controler/ddd')
 };

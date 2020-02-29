@@ -3,13 +3,20 @@ const getCidades = require('../../service/state');
 async function getCidadesEstado(siglaEstado){
 
     if (siglaEstado.length !== 2) {
-        return JSON.stringify({"erro": "Sigla do estado estar incorreta"});
+        return JSON.stringify({"error": "UF incorreto."});
     }
 
-    const listaDeCidades   = await getCidades(siglaEstado)
-    const respostaTratada  = await trataResposta(listaDeCidades);
+    try {
 
-    return respostaTratada;
+        const listaDeCidades   = await getCidades(siglaEstado);
+        const respostaTratada  = await trataResposta(listaDeCidades);
+        
+        return respostaTratada;
+    
+    } catch (error) {
+        return JSON.stringify({"error":"UF não existe."});
+    }
+
 }
 
 /* Trata a resposta que vem da API do INEP
@@ -17,10 +24,9 @@ async function getCidadesEstado(siglaEstado){
  */
 function trataResposta(res) {
     const cidades = res.data.reduce((dadoPuro, linhaCidade) =>{
-        const cidade = linhaCidade.split(":")
-        return [...dadoPuro, cidade[1]]
-
-    }, [])
+        const cidade = linhaCidade.split(":");
+        return [...dadoPuro, cidade[1]];
+    }, []);
 
     return cidades;
 } 

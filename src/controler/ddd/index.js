@@ -2,15 +2,21 @@ const getCidades = require('../../service/ddd');
 
 async function getCidadesByDdd(ddd){
 
-    ddd = ddd.toString()
+    ddd = ddd.toString();
+
     if (ddd.length !== 2) {
-        return JSON.stringify({"erro": "DDD estar incorreto."});
+        return JSON.stringify({"error": "DDD incorreto."});
     }
 
-    const listaDeCidades   = await getCidades(ddd)
-    const respostaTratada  = await trataResposta(listaDeCidades.data.payload);
+    try {
+        const listaDeCidades   = await getCidades(ddd);
+        const respostaTratada  = await trataResposta(listaDeCidades.data.payload);
 
-    return respostaTratada;
+        return respostaTratada;
+    
+    } catch (error) {
+        return JSON.stringify({"error":"DDD não existe."});
+    }
 }
 
 /* Trata a resposta que vem da API 
@@ -27,8 +33,8 @@ function trataResposta(data) {
 
     // array com todas as cidades DDD
     body.cidades = data.reduce((dadoPuro, linhaCidade) =>{
-        return [...dadoPuro, linhaCidade.cidade]
-    }, [])
+        return [...dadoPuro, linhaCidade.cidade];
+    }, []);
 
     return body;
 } 

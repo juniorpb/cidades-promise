@@ -1,6 +1,6 @@
 {
   "name": "cidades-promise",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "Busca Cidades por meio da sigla do Estado, DDD e/ou outras formas de ordena-las 📍🏠",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/juniorpb/cidades-promise/issues"
   },
-  "homepage": "https://github.com/juniorpb/cidades-promise#readme",
+  "homepage": "https://github.com/juniorpb/cidades-promise",
   "dependencies": {
     "axios": "^0.19.2"
   }

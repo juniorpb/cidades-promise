@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/juniorpb/cidades-promise",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }

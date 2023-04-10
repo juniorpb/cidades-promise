@@ -6,5 +6,5 @@
 
 module.exports = {
     getCitiesByState: require('./controler/state'),
-    getCitiesByDddd:   require('./controler/ddd')
+    getCitiesByDdd:   require('./controler/ddd')
 };

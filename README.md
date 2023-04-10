@@ -94,17 +94,19 @@ cidades.getCitiesByState("gg").then((res) => {
 ``` js
 const cidades = require('cidades-promise');
 
-cidades.getCitiesByDddd(83).then((res) => {
+cidades.getCitiesByDdd(83).then((res) => {
     console.log(res);
 })
     
-// [
-//   'AGUA BRANCA',
-//   'AGUIAR',
-//   'ALAGOA GRANDE',
-//   'ALAGOA NOVA',
+// {
+//   estado: 'PB',
+//   cidades: [
+//     'Água Branca',
+//     'Aguiar',
+//     'Alagoa Grande',
 //    ... more items
-// ]  
+//    ]
+// }
 
 ```
 
